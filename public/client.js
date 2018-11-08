@@ -36,7 +36,7 @@ socket.on('newPicture', function(msg) {
 });
 // read the data from the message that the server sent and change the
 // background of the webpage based on the data in the message
-socket.on('msg', function(msg) {
+socket.on('server-msg', function(msg) {
   msg = msg.toString();
   console.log('msg:', msg);
   switch (msg) {

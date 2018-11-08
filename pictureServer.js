@@ -87,7 +87,7 @@ const parser = new Readline({
 serial.pipe(parser);
 parser.on('data', function(data) {
   console.log('Data:', data);
-  io.emit('msg', data);
+  io.emit('server-msg', data);
 });
 //----------------------------------------------------------------------------//
 
